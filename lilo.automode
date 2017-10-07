@@ -35,18 +35,18 @@
   MAINMENU="1-13 15"
 #}}}
 #BASIC SETUP {{{
-  CUPS="y"
+  CUPS="n"
   CUSTOMREPO="n"         # Add custom repositories
-  FIRMWARE="y"           # Install custom firmwares
+  FIRMWARE="n"           # Install custom firmwares
   NFS="n"
-  READAHEAD="y"
-  SAMBA="y"
-  SSH="y"
+  READAHEAD="n"
+  SAMBA="n"
+  SSH="n"
   TLP="n"                # Laptop Power Manager
-  ZRAM="y"
-  ZSH="y"
-  OH_MY_ZSH="y"
-  PROPRIETARY_DRIVER="n" # Proprietary (NVIDIA) driver
+  ZRAM="n"
+  ZSH="n"
+  OH_MY_ZSH="n"
+  PROPRIETARY_DRIVER="y" # Proprietary (NVIDIA) driver
   FONTCONFIG="y"
   #}}}
   #ADDITIONAL FIRMWARE {{{
@@ -62,7 +62,7 @@
     #10) libffado [Firmware Audio Devices]
     #11) libmtp [Android Devices]
     #12) libraw1394 [IEE1394 Driver]
-    FIRMWARE_OPTIONS="11"
+    FIRMWARE_OPTIONS=""
   #}}}
 #}}}
 #DESKTOP ENVIRONMENT|WINDOW MANAGER {{{
@@ -87,7 +87,7 @@
     # 3) K3b
     # 4) Skrooge
     # 5) Yakuake
-    KDE_OPTIONS="1-5"
+    KDE_OPTIONS=""
   #}}}
   #ESSENTIAL APPS [Enlightenment,LXDE,Awesome,Fluxbox,OpenBox] {{{
     # 1) Display Manager
@@ -103,7 +103,7 @@
     #11) Xcompmgr
     #12) Zathura
     #13) speedtest-cli
-    MISCAPPS="1 3"
+    MISCAPPS="1"
   #}}}
   #DISPLAY MANAGER {{{
     # 1) Elsa
@@ -111,18 +111,18 @@
     # 3) LightDM
     # 4) SDDM
     # 5) Slim
-    DISPLAY_MANAGER="3"
+    DISPLAY_MANAGER="2"
   #}}}
   # 1) Icons Themes
   # 2) GTK2|GTK3 Themes
-  THEMES_OPTIONS="1 2"
+  THEMES_OPTIONS=""
   #ICONS THEMES {{{
     # 1) Numix
-    ICONS_THEMES="1"
+    ICONS_THEMES=""
   #}}}
   #GTK THEMES {{{
     # 1) Arc
-    GTK_THEMES="1"
+    GTK_THEMES=""
   #}}}
 #}}}
 #NETWORK MANAGER {{{
@@ -132,7 +132,7 @@
   # n) None
   NETWORKMANAGER=1
   #USB 3G MODEM SUPPORT
-  USBMODEM="y"
+  USBMODEM="n"
 #}}}
 #ACCESSORIES {{{
   # 1) Albert
@@ -146,7 +146,7 @@
   # 9) Shutter|Hotshots
   #10) Tilix
   #11) Terminator
-  ACCESSORIES_OPTIONS="10"
+  ACCESSORIES_OPTIONS=""
 #}}}
 #DEVELOPEMENT {{{
   # 1) Atom
@@ -164,7 +164,7 @@
   #13) OracleJDK
   #14) NodeJS
   #15) Microsoft Visual Studio Code
-  DEVELOPMENT_OPTIONS="13"
+  DEVELOPMENT_OPTIONS=""
 #}}}
 #OFFICE {{{
   # 1) Abiword+Gnumeric|Calligra
@@ -178,7 +178,7 @@
   # 9) LibreOffice
   #10) OCRFeeder
   #11) Xmind
-  OFFICE_OPTIONS="9"
+  OFFICE_OPTIONS=""
 #}}}
 #SYSTEM TOOLS {{{
   # 1) ClamAV
@@ -196,7 +196,7 @@
   #13) Wine
   #14) netdata
   #15) nload
-  SYSTEMTOOLS_OPTIONS="10"
+  SYSTEMTOOLS_OPTIONS="12"
 #}}}
 #GRAPHICS {{{
   # 1) Blender
@@ -209,7 +209,7 @@
   # 8) Scribus
   # 9) Shotwell
   #10) Simple Scan
-  GRAPHICS_OPTIONS="2-7 9"
+  GRAPHICS_OPTIONS=""
 #}}}
 #INTERNET {{{
   # 1) Browser
@@ -218,7 +218,7 @@
   # 4) Instant Messaging|IRC
   # 5) Mapping Tools
   # 6) VNC|Desktop Share
-  INTERNET_OPTIONS="1-6"
+  INTERNET_OPTIONS="1"
   #BROWSER {{{
     # 1) Chrome
     # 2) Chromium
@@ -226,7 +226,7 @@
     # 4) Midori|Konqueror
     # 5) Opera
     # 6) Vivaldi
-    BROWSERS_OPTIONS="3"
+    BROWSERS_OPTIONS="2"
   #}}}
   #DOWNLOAD|FILESHARE {{{
     # 1) AeroFS
@@ -259,7 +259,7 @@
     # 7) Telegram Desktop
     # 8) qTox
     # 9) discord
-    IM_OPTIONS="4"
+    IM_OPTIONS=""
   #}}}
   #MAPPING {{{
     # 1) Google Earth
@@ -276,7 +276,7 @@
   # 1) Players
   # 2) Editors|Tools
   # 3) Codecs
-  AUDIO_OPTIONS="1-3"
+  AUDIO_OPTIONS=""
   #PLAYERS {{{
     # 1) Amarok
     # 2) Audacious
@@ -293,21 +293,21 @@
     #13) Timidity++
     #14) Tomahawk
     #15) quodlibet
-    AUDIO_PLAYER_OPTIONS="4"
+    AUDIO_PLAYER_OPTIONS=""
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Audacity
     # 2) Easytag
     # 3) OcenAudio
     # 4) Soundconverter|Soundkonverter
-    AUDIO_EDITOR_OPTIONS="2"
+    AUDIO_EDITOR_OPTIONS=""
   #}}}
 #}}}
 #VIDEO {{{
   # 1) Players
   # 2) Editors|Tools
   # 3) Codecs
-  VIDEO_OPTIONS="1-3"
+  VIDEO_OPTIONS=""
   #PLAYERS {{{
     # 1) Gnome Mplayer
     # 2) LiveStreamer
@@ -318,7 +318,7 @@
     # 7) Popcorn Time
     # 8) VLC
     # 9) Kodi
-    VIDEO_PLAYER_OPTIONS="8"
+    VIDEO_PLAYER_OPTIONS=""
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
@@ -331,7 +331,7 @@
     # 8) Openshot
     # 9) Pitivi
     #10) Transmageddon
-    VIDEO_EDITOR_OPTIONS="1"
+    VIDEO_EDITOR_OPTIONS=""
   #}}}
 #}}}
 #GAMES {{{
@@ -346,7 +346,7 @@
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
-  WEBSERVER=4
+  WEBSERVER=""
   POSTGIS="n"
 #}}}
 #FONTS {{{
