@@ -165,7 +165,8 @@
   #13) OracleJDK
   #14) NodeJS
   #15) Microsoft Visual Studio Code
-  DEVELOPMENT_OPTIONS="15"
+  #16) Arduino IDE
+  DEVELOPMENT_OPTIONS="15 16"
 #}}}
 #OFFICE {{{
   # 1) Abiword+Gnumeric|Calligra

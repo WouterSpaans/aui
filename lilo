@@ -1520,6 +1520,7 @@ install_development_apps(){
     echo "13) $(menu_item "jdk" "Oracle JDK") $AUR"
     echo "14) $(menu_item "nodejs")"
     echo "15) $(menu_item "visualstudiocode" "Microsoft Visual Studio Code") $AUR"
+    echo "16) $(menu_item "arduino" "Arduino IDE")"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1580,6 +1581,9 @@ install_development_apps(){
           ;;
         15)
           aur_package_install "visual-studio-code"
+          ;;
+        16)
+          package_install "arduino"
           ;;
         "b")
           break
