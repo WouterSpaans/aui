@@ -146,7 +146,7 @@
   # 9) Shutter|Hotshots
   #10) Tilix
   #11) Terminator
-  ACCESSORIES_OPTIONS=""
+  ACCESSORIES_OPTIONS="6"
 #}}}
 #DEVELOPEMENT {{{
   # 1) Atom
