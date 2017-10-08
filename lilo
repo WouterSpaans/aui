@@ -1519,6 +1519,7 @@ install_development_apps(){
     echo "12) $(menu_item "jdk7-openjdk" "OpenJDK")"
     echo "13) $(menu_item "jdk" "Oracle JDK") $AUR"
     echo "14) $(menu_item "nodejs")"
+    echo "15) $(menu_item "visualstudiocode" "Microsoft Visual Studio Code") $AUR"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1577,7 +1578,7 @@ install_development_apps(){
         14)
           package_install "nodejs"
           ;;
-        13)
+        15)
           aur_package_install "visual-studio-code"
           ;;
         "b")

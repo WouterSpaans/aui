@@ -165,7 +165,7 @@
   #13) OracleJDK
   #14) NodeJS
   #15) Microsoft Visual Studio Code
-  DEVELOPMENT_OPTIONS=""
+  DEVELOPMENT_OPTIONS="15"
 #}}}
 #OFFICE {{{
   # 1) Abiword+Gnumeric|Calligra
