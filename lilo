@@ -1695,7 +1695,6 @@ install_system_apps(){
     echo "13) $(menu_item "wine")"
     echo "14) $(menu_item "netdata")"
     echo "15) $(menu_item "nload")"
-    echo "16) $(menu_item "pamac")"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1774,9 +1773,6 @@ install_system_apps(){
           ;;
         15)
           package_install "nload"
-          ;;
-        16)
-          aur_package_install "pamac-aur"
           ;;
         "b")
           break
