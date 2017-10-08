@@ -196,8 +196,7 @@
   #13) Wine
   #14) netdata
   #15) nload
-  #16) pamac
-  SYSTEMTOOLS_OPTIONS="12 16"
+  SYSTEMTOOLS_OPTIONS="12"
 #}}}
 #GRAPHICS {{{
   # 1) Blender
