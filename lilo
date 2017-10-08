@@ -446,11 +446,11 @@ install_basic_setup(){
   #print_title "(UN)COMPRESS TOOLS - https://wiki.archlinux.org/index.php/P7zip"
   #package_install "zip unzip unrar p7zip lzop cpio"
   #pause_function
-  #print_title "AVAHI - https://wiki.archlinux.org/index.php/Avahi"
-  #print_info "Avahi is a free Zero Configuration Networking (Zeroconf) implementation, including a system for multicast DNS/DNS-SD discovery. It allows programs to publish and discovers services and hosts running on a local network with no specific configuration."
-  #package_install "avahi nss-mdns"
-  #is_package_installed "avahi" && system_ctl enable avahi-daemon
-  #pause_function
+  print_title "AVAHI - https://wiki.archlinux.org/index.php/Avahi"
+  print_info "Avahi is a free Zero Configuration Networking (Zeroconf) implementation, including a system for multicast DNS/DNS-SD discovery. It allows programs to publish and discovers services and hosts running on a local network with no specific configuration."
+  package_install "avahi nss-mdns"
+  is_package_installed "avahi" && system_ctl enable avahi-daemon
+  pause_function
   #print_title "ALSA - https://wiki.archlinux.org/index.php/Alsa"
   #print_info "The Advanced Linux Sound Architecture (ALSA) is a Linux kernel component intended to replace the original Open Sound System (OSSv3) for providing device drivers for sound cards."
   #package_install "alsa-utils alsa-plugins"
@@ -1100,9 +1100,10 @@ install_desktop_environment(){
       print_title "GNOME - https://wiki.archlinux.org/index.php/GNOME"
       print_info "GNOME is a desktop environment and graphical user interface that runs on top of a computer operating system. It is composed entirely of free and open source software. It is an international project that includes creating software development frameworks, selecting application software for the desktop, and working on the programs that manage application launching, file handling, and window and task management."
       #package_install "gnome gnome-extra gnome-software gnome-initial-setup"
-      package_install "gnome gnome-initial-setup"
-      package_install "deja-dup gedit-plugins gpaste gnome-tweak-tool gnome-power-manager"
-      aur_package_install "nautilus-share"
+      #package_install "deja-dup gedit-plugins gpaste gnome-tweak-tool gnome-power-manager"
+      package_install "gnome"
+      package_install "gedit gnome-tweak-tool gnome-power-manager"
+      #aur_package_install "nautilus-share"
       # remove gnome games
       # package_remove "aisleriot atomix four-in-a-row five-or-more gnome-2048 gnome-chess gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-tetravex gnome-taquin swell-foop hitori iagno quadrapassel lightsoff tali"
       # config xinitrc
