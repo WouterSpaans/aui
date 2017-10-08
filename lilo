@@ -1893,8 +1893,8 @@ install_internet_apps(){
                   ;;
                 2)
                   package_install "chromium"
-                  #aur_package_install "chrome-gnome-shell-git"
-                  #package_remove "epiphany"
+                  aur_package_install "chrome-gnome-shell-git"
+                  package_remove "epiphany"
                                     
                   ;;
                 3)
