@@ -1584,6 +1584,8 @@ install_development_apps(){
           ;;
         16)
           package_install "arduino"
+          add_user_to_group ${username} uucp
+          # add_user_to_group ${username} lock # If you are planning to use the default Java IDE, add your user to the lock group for /var/lock/lockdev access.
           ;;
         "b")
           break
